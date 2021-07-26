@@ -4,7 +4,7 @@ Specon is a noval container scheduler that is optimized for short-lived deep lea
 
 ## Getting Started
 
-Specon relies on root privilege and customized Kubernetes configuration and required NFS file system to store logs for all workers. SpeCon is only actively tested on Ubuntu 16.04 LTS and Kubernetes 1.15
+Specon relies on root privilege and customized Kubernetes configuration and required NFS file system to store logs for all workers. SpeCon is only actively tested on Ubuntu 18.04 LTS and Kubernetes 1.17
 
 ### Build
 
@@ -104,8 +104,5 @@ All logs from Specon are stored in /mnt/linuxidc. Both master and workers genera
 ```
 There are two migration events happened: at time 1578177799.674656, job 1 migrate from node 1 to node 3; at time 1578177891.2359834, job 3 migrate from node 1 to node 2.
 
-
-We have evaluated both SpeCon and Kubernetes defeault scheduler. Specon would have about 15% improvement on overall completion time and 24% improvement in terms of makespan.
-![avatar](./images/completion_bar.png)
 
 
